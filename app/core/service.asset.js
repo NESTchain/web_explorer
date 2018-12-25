@@ -90,7 +90,7 @@
                         description = description_p[3];
                         type = "User Issued";
                     }
-                    if (response.data[0].symbol === "BTS") {
+                    if (response.data[0].symbol === "NEST") {
                         type = "Core Token";
                     }
 

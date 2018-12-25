@@ -52,7 +52,7 @@
             python_backend: "http://185.208.208.184:5000",
             elasticsearch_wrapper: "https://eswrapper.bitshares.eu", // infrastructure
             udf_wrapper: "http://185.208.208.184:5001"
-        };
+		};
 
         return {
             pageTransitionOpts: pageTransitionOpts,
