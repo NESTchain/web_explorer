@@ -172,6 +172,7 @@
                             virtual_op: response.data[0].virtual_op,
                             trx_in_block: response.data[0].trx_in_block,
                             op_in_trx: response.data[0].op_in_trx,
+							trx_id:	response.data[0].trx_id,
                             result: response.data[0].result,
                             type: op_type[0],
                             color: op_type[1],
