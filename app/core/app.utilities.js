@@ -550,6 +550,46 @@
                     name = "FBA DISTRIBUTE";
                     color = "8808B2";
                 }
+				else if(opType === 36) {
+                    name = "CONTRACT DEPLOY";
+                    color = "2A7FFF";
+                }
+				else if(opType === 37) {
+                    name = "CONTRACT CALL";
+                    color = "4ECEF8";
+                }
+				else if(opType === 38) {
+                    name = "PIO OPERATION";
+                    color = "FFFF7F";
+                }
+				else if(opType === 39) {
+                    name = "SEND MESSAGE";
+                    color = "FF2A55";
+                }
+				else if(opType === 40) {
+                    name = "ASSET CLAIM POOL";
+                    color = "6BBCD7";
+                }
+				else if(opType === 41) {
+                    name = "ASSET UPDATE ISSUER";
+                    color = "E9C842";
+                }
+				else if(opType === 42) {
+                    name = "HTLC PREPARE";
+                    color = "E96562";
+                }
+				else if(opType === 43) {
+                    name = "HTLC REDEEM";
+                    color = "008000";
+                }
+				else if(opType === 44) {
+                    name = "HTLC EXTEND EXPIRY";
+                    color = "1F08B2";
+                }
+				else if(opType === 45) {
+                    name = "HTLC REFUND";
+                    color = "710000";
+                }			
 
                 results[0] = name;
                 results[1] = color;
