@@ -146,8 +146,8 @@
                                                 </thead>
                                                 <tbody>
                                                 <tr data-ng-repeat="balance in balances | orderBy:column:reverse | filter:search">
-                                                    <td><a href="#/objects/{{balance.id}}/">{{balance.id}}</a></td>
-                                                    <td><a href="#/assets/{{balance.asset}}/">{{balance.asset_name}}</a></td>
+                                                    <td>{{balance.id}}</a></td>
+                                                    <td>{{balance.asset_name}}</a></td>
                                                     <td class="align-right">{{balance.balance | number}}</td>
                                                 </tbody>
                                             </table>
@@ -486,9 +486,9 @@
         <div class="panel-body table-responsive">
             <div class="col-md-6">
             </div>
-            <div class="col-md-6 text-right">
+        <!--    <div class="col-md-6 text-right">
                 <a href="http://open-explorer.io/bitshares-account-exporter/" target="_blank"><span size="+1">Click here for a CSV account exporter</span></a>
-            </div>
+            </div>-->
             <table class="table">
                 <thead>
                 <tr>

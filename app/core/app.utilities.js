@@ -57,7 +57,7 @@
                                             var amount = Number(amount_amount / divideby);
 
                                             operation_text =  "<a href='/#/accounts/" + from + "'>" + response_name.data + "</a>";
-                                            operation_text = operation_text + " sent " + formatNumber(amount) + " <a href='/#/assets/" + amount_asset_id + "'>" + asset_name + "</a> to <a href='/#/accounts/" + to + "'>" + to_name + "</a>";
+                                            operation_text = operation_text + " sent " + formatNumber(amount) + " " + asset_name + " to <a href='/#/accounts/" + to + "'>" + to_name + "</a>";
 
                                             callback(operation_text);
                                     });
