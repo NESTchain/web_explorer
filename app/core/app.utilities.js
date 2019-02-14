@@ -8,6 +8,7 @@
 
         function formatNumber(x) {
             try {
+				
                 var parts = x.toString().split(".");
 
                 if (x < 1) { parts[1] = parts[1]; }

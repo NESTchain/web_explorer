@@ -29,8 +29,8 @@
         var date = new Date();
         var year = date.getFullYear();
         var main = {
-            brand: 'μNest Explorer',
-            name: 'μNest',
+            brand: 'μNEST Explorer',
+            name: 'μNEST',
             api_link: 'https://github.com/NESTchain/explorer',
             source_code_link: 'https://github.com/NESTchain',
             year: year,

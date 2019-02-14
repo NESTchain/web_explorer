@@ -150,10 +150,13 @@
                             identifier: response.data.parameters.current_fees.parameters[i][0],
                             operation: op_type[0],
                             color: op_type[1],
-                            basic_fee: utilities.formatBalance(basic_fee, 5),
-                            premium_fee: utilities.formatBalance(response.data.parameters.current_fees.parameters[i][1].premium_fee, 5),
-                            price_per_kbyte: utilities.formatBalance(response.data.parameters.current_fees.parameters[i][1].price_per_kbyte, 5)
+                            basic_fee: utilities.formatBalance(basic_fee, 6),
+                            premium_fee: utilities.formatBalance(response.data.parameters.current_fees.parameters[i][1].premium_fee, 6),
+                            price_per_kbyte: utilities.formatBalance(response.data.parameters.current_fees.parameters[i][1].price_per_kbyte, 6)
                         };
+						if(isNaN(fee.basic_fee)) {fee.basic_fee = 0;}
+						if(isNaN(fee.premium_fee)) {fee.premium_fee = 0;}
+						if(isNaN(fee.price_per_kbyte)) {fee.price_per_kbyte = 0;}
                         fees.push(fee);
                     }
                 });
@@ -174,6 +177,7 @@
                             op_in_trx: response.data[0].op_in_trx,
 							trx_id:	response.data[0].trx_id,
                             result: response.data[0].result,
+							fee:response.data[0].op[1].fee.amount,
                             type: op_type[0],
                             color: op_type[1],
                             raw: raw_obj,

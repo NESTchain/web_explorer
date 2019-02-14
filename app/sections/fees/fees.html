@@ -39,9 +39,9 @@
                 <tr data-ng-repeat="fee in fees | orderBy:column:reverse | filter:search">
                     <td>{{fee.identifier}}</td>
                     <td><span class="badge badge-primary" style="background-color: #{{fee.color}};">{{fee.operation}}</span></td>
-                    <td class="align-right">{{fee.basic_fee | number}}</td>
-					<td class="align-right">{{fee.premium_fee | number}}</td>
-					<td class="align-right">{{fee.price_per_kbyte | number}}</td>
+                    <td class="align-right">{{fee.basic_fee}}</td>
+					<td class="align-right">{{fee.premium_fee}}</td>
+					<td class="align-right">{{fee.price_per_kbyte}}</td>
                 </tbody>
             </table>
         </div>
