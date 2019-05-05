@@ -10,5 +10,10 @@
         networkService.getOperation(name, function (returnData) {
             $scope.data = returnData;
         });
+
+        networkService.decodeMsg(name, function (returnData) {
+            $scope.msg = returnData;
+        });
+
     }
 })();

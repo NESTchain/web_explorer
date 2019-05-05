@@ -188,6 +188,15 @@
                     });
                 });
             },
+            decodeMsg: function(operation, callback) {
+                var msg;
+                $http.get(appConfig.urls.python_backend + "/decrypt_msg?operation_id=" + operation).then(function(response) {
+                        msg = response.data.msg;
+                        callback(msg)
+
+                });
+            },
+
             getBlock: function(block_num, callback) {
                 var block;
                 $http.get(appConfig.urls.python_backend + "/get_block?block_num=" + block_num).then(function (response) {
